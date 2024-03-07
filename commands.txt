@@ -1,0 +1,38 @@
+<h> == "<- go left" 
+<j> == "▼ go down"
+<k> == "▲ go up" 
+<l> == "-> go right" 
+
+<i> == "Enter Insert Mode, enters before current cursor" 
+<A> == "Append to current line, only line matters as text will append to the end of the line"
+<d> == "Enter delete mode"
+<dw> == "delete from current cursor to the next word EXCLUDING its first character - can be use with number modifier eg d2w will delete from cursor to end of second word"
+<de> == "delete from current cursor to end of the current word INCLUDING the last character"
+<d$> == "delete from current cursor up to the end of the current line"
+<dd> == "delete current line - can be used with modifiers eg 2dd will delete the current and the next line"
+<w> == "move the cursor to the start of the next word - can be used with number modifiers eg 2w will jump 2 words"
+<e< == "move the cursor to the end of the current word - can be used with number modifiers eg 2e will jump to the end of the second word forward"
+<0> == "move to the start of the current line"
+<u> == "undo last command"
+<U> == "revert line to original state"
+<C-r> == "Control R to redo"
+<p> == "Put previously deleted text below the cursor"
+<P> == "Put previously deleted text before the cursor"
+<r> == "Replace char at cursor with next char ex. rx will replace char at cursor with x and rr will replace it with r"
+<ce> == "change from cursor until the end of word eg placing cursor at the u in luce and pressing ce followed by ine will change the uce to ine"
+<C-g> == "Show Current File location as well as number of lines and current position"
+<G> == "Goto end of file"
+<gg> == "Goto start of file"
+<1g> == "Goto line number 1"
+<100g> == "Goto line number 100"
+</> == "enter search mode" 
+</word> <ENTER> == "search for all occurrences of the word word - use n to goto next occurrece and N to goto previous occurence"
+<%> == "Goto matching parentheses - only works for () [] {}"
+<:s/old/new> == "Replace first occurence of old with new on current line"
+<:s/odl/new/g> == "Replace all occurences of old with new on current line"
+<:#,#s/old/new/g> == "Replace all occurences of old with new on lines between # and # INCLUSIVELY
+<:%s/old/new/g> == "Replace all occurences of old with new within the current file
+<:%s/old/new/gc> == "Same as above but ask for confirmation each time
+
+
+Continue on with the start of Lesson 5.1: HOW TO EXECUTE AN EXTERNAL COMMAND
